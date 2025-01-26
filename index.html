@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link href="/src/style.css" rel="stylesheet" />
+    <script type="module" src="/src/main.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulaire</title>
+  </head>
+  <body>
+    <div
+      class="flex justify-center items-center w-screen h-screen bg-purple-400 font-serif"
+    >
+      <form
+        action=""
+        class="relative bg-stone-900 border-1 h-170 w-130 flex flex-col justify-center items-center text-center"
+      >
+        <h1 class="absolute top-4 text-4xl text-white">Formulaire</h1>
+        <div class="absolute top-20 flex flex-col">
+          <input
+            class="bg-white border-1 rounded-md p-1 w-80"
+            type="text"
+            name="name"
+            placeholder="enter your name"
+            id="name"
+            required
+          />
+          <label for="name" class="text-white flex text-lg">name</label>
+        </div>
+        <div class="absolute top-37 flex flex-col">
+          <input
+            class="bg-white border-1 rounded-md p-1 w-80"
+            type="text"
+            name="firstname"
+            placeholder="enter your firstname"
+            id="firstname"
+            required
+          />
+          <label for="firstname" class="text-white flex text-lg"
+            >firstname</label
+          >
+        </div>
+        <div class="absolute top-55 flex flex-col">
+          <input
+            class="bg-white border-1 rounded-md p-1 w-80"
+            type="email"
+            name="email"
+            placeholder="jeantamere@gmail.com"
+            id="email"
+            required
+          />
+          <label for="email" class="text-white flex text-lg">email</label>
+        </div>
+        <div class="absolute bottom-40 flex flex-col">
+          <label for="message" class="text-white flex text-1g">Commentaire</label>
+          <textarea class="bg-white h-50 w-80" name="message" id="message"></textarea>
+        </div>
+        <div class="absolute bottom-19 bg-green-400 text-2xl border p-1">
+          <button class="text-white cursor-pointer">Submit →</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
